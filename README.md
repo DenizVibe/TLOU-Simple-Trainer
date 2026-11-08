@@ -1,6 +1,6 @@
 # Simple Menu
 
-![Simple Menu](Package/fluffy/screenshot.png)
+![Simple Menu](Package/Fluffy/screenshot.png)
 
 **Download:** `simpleMenu-v1.4.1.zip` from releases.
 

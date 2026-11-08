@@ -6,11 +6,11 @@ build/
 Release/*
 !Release/simpleMenu-v1.4.1.zip
 
-# Copied into Package/fluffy by Package.bat
-Package/fluffy/winmm.dll
-Package/fluffy/simpleMenu.ini
-Package/fluffy/denizMenu.ini
-Package/fluffy/w1zsMenu.ini
+# Copied into Package/Fluffy by Package.bat
+Package/Fluffy/winmm.dll
+Package/Fluffy/simpleMenu.ini
+Package/Fluffy/denizMenu.ini
+Package/Fluffy/w1zsMenu.ini
 
 # Research helper's Python libraries (Tools/ndre.py)
 Tools/.pylib/
