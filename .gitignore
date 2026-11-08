@@ -1,0 +1,18 @@
+# Build outputs (build.bat)
+Build/
+build/
+
+# Release zips (package.bat)
+Release/*
+!Release/simpleMenu-v1.4.1.zip
+
+# Copied into Package/fluffy by Package.bat
+Package/fluffy/winmm.dll
+Package/fluffy/simpleMenu.ini
+Package/fluffy/denizMenu.ini
+Package/fluffy/w1zsMenu.ini
+
+# Research helper's Python libraries (Tools/ndre.py)
+Tools/.pylib/
+tools/.pylib/
+__pycache__/

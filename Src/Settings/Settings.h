@@ -1,0 +1,33 @@
+// Settings stored in Documents\Simple Menu\simpleMenu.ini, outside the game
+// folder, so updating or reinstalling the menu (or Fluffy) never resets them.
+// Older versions kept the file next to the game executable; it is copied over
+// once. Reads and
+// writes go straight to the file (Get/WritePrivateProfileString), so every
+// change made in the menu is saved immediately.
+//
+// The Infinite Ammo mod's keys live on unchanged in the [InfiniteAmmo]
+// section. If simpleMenu.ini does not exist yet but denizMenu.ini does,
+// those keys are imported once.
+#pragma once
+#include <string>
+
+namespace settings {
+
+// oldIniPath: the file older versions used, copied once if iniPath is new.
+void Init(const wchar_t* iniPath, const wchar_t* oldIniPath, const wchar_t* legacyIniPath);
+const std::wstring& Path();
+
+bool GetBool(const char* section, const char* key, bool def);
+int GetInt(const char* section, const char* key, int def);
+std::string GetString(const char* section, const char* key, const char* def);
+
+void SetBool(const char* section, const char* key, bool value);
+void SetInt(const char* section, const char* key, int value);
+void SetString(const char* section, const char* key, const std::string& value);
+
+// True when Init created the file (first run or imported from the old mod).
+bool CreatedThisRun();
+bool ImportedLegacy();
+bool MovedFromGameFolder();
+
+} // namespace settings
